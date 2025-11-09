@@ -19,7 +19,10 @@ const ItemCount = ({ stock, initial, onAdd }) => {
     <div style={styles.container}>
       <div style={styles.controls}>
         <button 
-          style={styles.button}
+          style={{
+            ...styles.button,
+            ...(quantity <= 1 ? styles.buttonDisabled : {})
+          }}
           onClick={decrement}
           disabled={quantity <= 1}
           onMouseEnter={(e) => {
@@ -35,7 +38,10 @@ const ItemCount = ({ stock, initial, onAdd }) => {
         </button>
         <h4 style={styles.quantity}>{quantity}</h4>
         <button 
-          style={styles.button}
+          style={{
+            ...styles.button,
+            ...(quantity >= stock ? styles.buttonDisabled : {})
+          }}
           onClick={increment}
           disabled={quantity >= stock}
           onMouseEnter={(e) => {
@@ -52,7 +58,10 @@ const ItemCount = ({ stock, initial, onAdd }) => {
       </div>
       <div>
         <button 
-          style={styles.addButton}
+          style={{
+            ...styles.addButton,
+            ...(stock <= 0 ? styles.addButtonDisabled : {})
+          }}
           onClick={() => onAdd(quantity)}
           disabled={stock <= 0}
           onMouseEnter={(e) => {
@@ -100,7 +109,12 @@ const styles = {
     cursor: 'pointer',
     fontWeight: 'bold',
     transition: 'all 0.3s ease',
-    boxShadow: '0 2px 8px rgba(255, 107, 107, 0.3)'
+    boxShadow: '0 2px 8px rgba(255, 107, 107, 0.3)',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 0,
+    lineHeight: 1
   },
   quantity: {
     margin: 0,
@@ -121,6 +135,15 @@ const styles = {
     fontWeight: 'bold',
     transition: 'all 0.3s ease',
     boxShadow: '0 4px 15px rgba(78, 205, 196, 0.3)'
+  },
+  buttonDisabled: {
+    opacity: 0.5,
+    cursor: 'not-allowed'
+  },
+  addButtonDisabled: {
+    opacity: 0.5,
+    cursor: 'not-allowed',
+    background: 'linear-gradient(135deg, #4d4d64 0%, #3d3d54 100%)'
   }
 };
 

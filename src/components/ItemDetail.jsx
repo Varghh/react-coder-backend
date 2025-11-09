@@ -19,8 +19,6 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
     };
     
     addItem(item, quantity);
-    
-    console.log(`✅ Agregaste ${quantity} unidades de ${name} al carrito`);
   };
 
   return (

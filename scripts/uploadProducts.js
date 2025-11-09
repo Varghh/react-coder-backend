@@ -1,5 +1,5 @@
 import { collection, addDoc } from 'firebase/firestore';
-import { db } from './firebase';
+import { db } from '../src/firebase.js';
 
 const products = [
   {
@@ -89,3 +89,4 @@ const uploadProducts = async () => {
 };
 
 uploadProducts();
+
