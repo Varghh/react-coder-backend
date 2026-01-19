@@ -6,6 +6,7 @@ import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import Cart from './components/Cart';
 import Checkout from './components/Checkout';
+import AdminPanel from './components/AdminPanel';
 
 function App() {
   return (
@@ -37,6 +38,11 @@ function App() {
             <Route 
               path='/checkout' 
               element={<Checkout />} 
+            />
+            
+            <Route 
+              path='/admin' 
+              element={<AdminPanel />} 
             />
             
             <Route 

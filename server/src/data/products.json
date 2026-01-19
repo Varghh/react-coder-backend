@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "title": "Alimento Premium para Perros",
+    "description": "Alimento balanceado premium para perros adultos de todas las razas.",
+    "code": "ALM001",
+    "price": 15000,
+    "status": true,
+    "stock": 10,
+    "category": "alimento",
+    "thumbnails": [
+      "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=400"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Alimento para Gatos",
+    "description": "Alimento nutritivo para gatos con proteínas de alta calidad.",
+    "code": "ALM002",
+    "price": 12000,
+    "status": true,
+    "stock": 15,
+    "category": "alimento",
+    "thumbnails": [
+      "https://images.unsplash.com/photo-1606214174585-fe31582dc6ee?w=400"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Snacks para Perros",
+    "description": "Deliciosos snacks naturales para premiar a tu perro.",
+    "code": "SNK001",
+    "price": 3500,
+    "status": true,
+    "stock": 25,
+    "category": "alimento",
+    "thumbnails": [
+      "https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?w=400"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Shampoo para Perros",
+    "description": "Shampoo hipoalergénico con fragancia suave y duradera.",
+    "code": "HIG001",
+    "price": 4500,
+    "status": true,
+    "stock": 20,
+    "category": "higiene",
+    "thumbnails": [
+      "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=400"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Cepillo Dental",
+    "description": "Cepillo dental para mantener la higiene bucal de tu mascota.",
+    "code": "HIG002",
+    "price": 2800,
+    "status": true,
+    "stock": 30,
+    "category": "higiene",
+    "thumbnails": [
+      "https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?w=400"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Arena para Gatos",
+    "description": "Arena absorbente con control de olores para gatos.",
+    "code": "HIG003",
+    "price": 5500,
+    "status": true,
+    "stock": 18,
+    "category": "higiene",
+    "thumbnails": [
+      "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Pelota de Goma",
+    "description": "Pelota resistente ideal para jugar y ejercitar a tu perro.",
+    "code": "JUG001",
+    "price": 1500,
+    "status": true,
+    "stock": 40,
+    "category": "juguetes",
+    "thumbnails": [
+      "https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?w=400"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Ratón de Juguete",
+    "description": "Ratón de tela con catnip para que tu gato se divierta.",
+    "code": "JUG002",
+    "price": 1200,
+    "status": true,
+    "stock": 35,
+    "category": "juguetes",
+    "thumbnails": [
+      "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=400"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Cuerda para Perros",
+    "description": "Cuerda resistente para jugar al tira y afloja.",
+    "code": "JUG003",
+    "price": 2000,
+    "status": true,
+    "stock": 22,
+    "category": "juguetes",
+    "thumbnails": [
+      "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400"
+    ]
+  }
+]

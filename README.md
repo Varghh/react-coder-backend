@@ -1,12 +1,50 @@
-# React + Vite
+# React Coder + Backend - E-commerce de Mascotas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación de e-commerce desarrollada con React + Vite y backend Node.js para la venta de productos para mascotas.
 
-Currently, two official plugins are available:
+## Estructura del Proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+react-coder-backend/
+├── server/          # Backend API (Node.js + Express)
+├── src/             # Frontend React
+└── scripts/         # Scripts de utilidad
+```
 
-## Expanding the ESLint configuration
+## Tecnologías
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React 19, Vite, React Router
+- **Backend:** Node.js, Express
+- **Persistencia:** Archivos JSON
+
+## Instalación
+
+### Frontend
+```bash
+npm install
+npm run dev
+```
+
+### Backend
+```bash
+cd server
+npm install
+npm start
+```
+
+## Uso
+
+1. Iniciar el servidor backend en el puerto 8080
+2. Iniciar el frontend con `npm run dev`
+3. Acceder a `http://localhost:5173`
+
+## Endpoints API
+
+- `GET /api/products` - Listar productos
+- `GET /api/products/:id` - Obtener producto
+- `POST /api/products` - Crear producto
+- `PUT /api/products/:id` - Actualizar producto
+- `DELETE /api/products/:id` - Eliminar producto
+- `POST /api/carts` - Crear carrito
+- `GET /api/carts/:id` - Obtener carrito
+- `POST /api/carts/:id/product/:pid` - Agregar producto al carrito

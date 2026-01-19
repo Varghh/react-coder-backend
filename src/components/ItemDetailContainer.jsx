@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { getDoc, doc } from 'firebase/firestore';
-import { db } from '../firebase';
+import { getProductById } from '../services/productsService';
 import ItemDetail from './ItemDetail';
 
 const ItemDetailContainer = () => {
@@ -13,13 +12,9 @@ const ItemDetailContainer = () => {
   useEffect(() => {
     setLoading(true);
 
-    const docRef = doc(db, 'products', itemId);
-
-    getDoc(docRef)
-      .then(response => {
-        const data = response.data();
-        const productAdapted = { id: response.id, ...data };
-        setProduct(productAdapted);
+    getProductById(itemId)
+      .then(productData => {
+        setProduct(productData);
       })
       .catch(error => {
         console.error('Error al cargar producto:', error);
